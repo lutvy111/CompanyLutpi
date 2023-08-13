@@ -1,0 +1,95 @@
+/* Reset CSS */
+body, h1, h2, h3, p, span, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f0f5; /* Background pink muda */
+  color: #6c567b; /* Warna teks pink gelap */
+}
+
+header {
+  background-color: #f06292; /* Background pink cerah */
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem; /* Ukuran font lebih besar */
+  margin-bottom: 0.5rem; /* Ruang bawah yang sedikit lebih besar */
+}
+
+header p {
+  font-size: 1.2rem; /* Ukuran font teks intro */
+  margin-bottom: 1rem;
+}
+
+main {
+  margin: 1rem;
+}
+
+.article {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-bottom: 2.5rem; /* Ruang bawah yang lebih besar */
+  border-radius: 10px; /* Sudut yang lebih melengkung */
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Bayangan lebih menonjol */
+  overflow: hidden; /* Untuk mengatur overflow saat animasi */
+  position: relative; /* Untuk posisi slide */
+}
+
+.article h2 {
+  font-size: 1.8rem;
+  position: relative; /* Mengatur posisi relatif */
+  left: 0; /* Mulai dari posisi awal */
+  transform: translateX(0); /* Menggeser horizontal */
+  transition: transform 0.3s ease-in-out; /* Transisi yang halus */
+}
+
+.article:hover h2 {
+  transform: translateX(0.5rem); /* Geser judul saat dihover */
+}
+
+.article p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem; /* Ruang bawah yang sedikit lebih besar */
+}
+
+.category {
+  background-color: #aa4b6b; /* Latar belakang pink lebih gelap */
+  color: #fff;
+  padding: 0.2rem 0.5rem; /* Padding lebih besar */
+  border-radius: 5px; /* Sudut yang lebih melengkung */
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 1rem; /* Ruang bawah yang lebih besar */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem; /* Ruang atas yang lebih besar */
+}
+
+.social-icons a {
+  color: #d81b60; /* Warna ikon pink cerah */
+  font-size: 24px;
+  margin: 0 20px; /* Ruang antara ikon lebih besar */
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #aa1155; /* Warna ikon sedikit lebih gelap pada hover */
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0; /* Ruang atas dan bawah yang lebih besar */
+  background-color: #f06292; /* Background pink cerah */
+  color: #fff;
+}
